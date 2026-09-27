@@ -1,23 +1,86 @@
-
+# ---- Vivado ----
+*.runs/
+*.gen/
+*.cache/
+*.sim/
+*.hw/
+*.ip_user_files/
+*.srcs/sources_1/bd/*/hdl/
+*.Xil/
 *.jou
 *.log
 *.str
+*.backup.jou
+*.backup.log
+vivado_pid*.debug
+webtalk*.log
+webtalk*.jou
 
-*.cache/
-*.hw/
-*.ip_user_files/
-*.runs/
-*.sim/
-*.gen/
-*.srcs/ip/**/tmp/
-.Xil/
+# ---- Vitis (Unified IDE) ----
+build-vitis/
+build-vivado/
+**/Debug/
+**/Release/
+*.o
+*.elf.bak
 
+# ---- General ----
+*.Xil/
+*.sw_folder_convert/
+
+# Ignore build output directory
+/build
+/export
+
+# Ignore object files and dependent files
+*.o
+*.d
+
+#Ignore logs folder and log files
+/logs
+*.log
+
+#Ignore lock files
+*.lock
+
+*.bin
+*.pdi
+
+*.vitisWorkspace.json
+
+_ide/logs
+_ide/.wsdata
+
+# ---- HDL console sim (з lesson5) ----
 xsim.dir/
 *.pb
 *.wdb
 
-*.bak
-*.orig
-*~
+# ---- Vitis generated (unified 2026.1) ----
+**/bsp/
+**/zynq_fsbl/
+**/hw/
+**/export/
+**/_ide/
+**/logs/
+*.a
+*.html
+*.bit
+**/ui/
+*.bda
+.rigel_lopper/
+**/compile_commands.json
+**/.clangd
+**/qemu/qemu_args.txt
 
+# ---- MicroBlaze BD (non-standard dir): keep only .bd + top wrapper ----
+# everything else under the BD dir is generated from .bd (ip/, ipshared/, synth/, sim/, hw_handoff/, *.veo/.vho/.sv/.bmm/.bxml/.ooc.xdc)
+lesson10/MicroBlaze/mb_running_light/*
+!lesson10/MicroBlaze/mb_running_light/mb_running_light.bd
+!lesson10/MicroBlaze/mb_running_light/hdl/
+lesson10/MicroBlaze/mb_running_light/hdl/*
+!lesson10/MicroBlaze/mb_running_light/hdl/mb_running_light_wrapper.vhd
 
+# ---- Vitis build output (CMake) ----
+**/build/
+**/.compile_commands/
