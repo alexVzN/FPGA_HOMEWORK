@@ -1,0 +1,38 @@
+# ---- Vivado generated (regenerate from dma_test.xpr / rebuild_bd.tcl) ----
+dma_test.cache/
+dma_test.gen/
+dma_test.hw/
+dma_test.ip_user_files/
+dma_test.runs/
+dma_test.sim/
+.Xil/
+*.jou
+*.log
+*.str
+*.pb
+*.backup.jou
+*.backup.log
+
+# ---- Hardware hand-off (re-export from the BD) ----
+*.xsa
+
+# ---- Vitis generated (regenerate: create platform from XSA, build app) ----
+platform/
+_ide/
+.rigel_lopper/
+app_component/build/
+app_component/_ide/
+app_component/.cache/
+app_component/compile_commands.json
+
+# ---- Editor / build caches ----
+.cache/
+.compile_commands/
+.clangd
+compile_commands.json
+*.o
+*.d
+
+# ---- Keep (not ignored): ----
+# dma_test.xpr, dma_test.srcs/, rebuild_bd.tcl, frame_grabber.xdc
+# rtl/, sim/, app_component/src/, app_component/vitis-comp.json
