@@ -1,0 +1,10 @@
+{
+  "name": "build_b",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/hls_config_pipe.cfg"],
+    "work_dir": ".",
+    "csyn_args": "--hls.package.output.syn=0"
+  }
+}
